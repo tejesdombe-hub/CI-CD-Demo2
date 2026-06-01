@@ -6,12 +6,14 @@ import org.example.cicd2.dto.CreateComponentRequest;
 import org.example.cicd2.dto.UpdateComponentRequest;
 import org.example.cicd2.exception.ComponentNotFoundException;
 import org.example.cicd2.service.ComponentService;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.util.Assert;
 
 import java.util.Collections;
 

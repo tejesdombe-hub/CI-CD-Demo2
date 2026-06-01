@@ -129,5 +129,10 @@ class ComponentServiceImplTest {
         when(repository.existsById(55L)).thenReturn(false);
         assertThrows(ComponentNotFoundException.class, () -> service.deleteComponent(55L));
     }
+
+    @Test
+    void intentionallyFailingTest_verifyPipelineDetectsFail() {
+        assertEquals(1, 2, "This test intentionally fails to verify CI pipeline is working");
+    }
 }
 
